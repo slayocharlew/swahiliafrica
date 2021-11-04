@@ -47,7 +47,8 @@ a {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    position: absolute;
+    position: fixed;
+    z-index: -99; 
     }
   
   /* Place text in the middle of the image */
@@ -106,21 +107,18 @@ a {
 }
 
                                                  /* HEADER CLASSES END! */
-.body-div{
-    position: absolute;
-    top:110%;
-    left: 30%;
-}
 .new-hero{
     position: absolute;
     top: 120%;
-    height: 200%;
+    height: 100%;
     width: 100%;
-    align-items: center;
+    align-items: center; 
+    background-color: #E2E8F0;
+    
 }
 .new-text{
     font-size: 1rem;
-    color: #E2E8F0;
+    left: 125%;
 }
 
 @media only screen and (max-width: 768px) {
