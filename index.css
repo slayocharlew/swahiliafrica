@@ -110,16 +110,181 @@ a {
 .new-hero{
     position: absolute;
     top: 120%;
-    height: 100%;
+    height: 1000%;
     width: 100%;
     align-items: center; 
     background-color: #E2E8F0;
-    
 }
+
+
+#head{
+    margin-top: 40px;
+}
+
+
 .new-text{
-    font-size: 1rem;
-    left: 125%;
+    font-size: 30rem;
+    margin-left: 25%;
 }
+
+
+
+.line{
+  padding-left: 85rem;
+  margin-top: 80px;
+}
+
+
+#lsas{
+    font-size: 700%;
+}
+
+
+#Psas{
+    font-size: 200%;
+    margin-right: 20px;
+}
+
+.massai{
+    position: absolute;
+    left: 320px;
+    top: 15rem;
+}
+
+
+
+#icon{
+    margin: 35rem;
+    top: 3%;
+    left: 22rem;
+    width: 6%;
+    position: absolute;
+    height: -10%;
+}
+
+
+#Ibeach{
+    margin: 30rem;
+    left: 52rem;
+    width: 8%;
+    position: absolute;
+    height: 2%;
+    top: 3.2%;
+}
+
+
+#Safari{
+    margin: 30rem;
+    left: 82rem;
+    width: 8%;
+    position: absolute;
+    height: 2%;
+    top: 3.3%;
+}
+
+
+
+#iconHead{
+    margin: 30rem;
+    left: 30rem;
+    width: 10%;
+    position: absolute;
+    height: 4%;
+    top: 5.4%;
+}
+
+
+#Headbeach{
+    margin: 30rem;
+    left: 56rem;
+    width: 13%;
+    position: absolute;
+    height: 5%;
+    top: 5.4%;
+}
+
+
+#HeadSafari{
+    margin: 30rem;
+    left: 87rem;
+    width: 15%;
+    position: absolute;
+    height: 6%;
+    top: 5.4%;
+}
+
+
+#cultureIcon{
+    margin: 30rem;
+    left: 110rem;
+    width: 8%;
+    position: absolute;
+    height: 2%;
+    top: 3.2%;
+}
+
+
+
+#headCulture{
+    margin: 30rem;
+    left: 114rem;
+    width: 15%;
+    position: absolute;
+    height: 6%;
+    top: 5.4%;
+}
+
+
+.visit{
+    height: 6%;
+    width: 100%;
+    background-color: wheat;
+    position: relative;
+    top: 5%;
+}
+
+
+#Serengeti{
+    font-weight: bold;
+    color: #583a19;
+    font-size: 4rem;
+    padding: 10%;
+    position: relative;
+    top: -10%;
+}
+
+#SerengetiParagrph{
+    font-size: 22px;
+    padding: 10%;
+    position: relative;
+    top: -58%;
+    display: block;
+    float: left;
+    width: 70%;
+}
+
+#serengetiImg{
+    top: 30%;
+    position: absolute;
+    width: 28%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
+
+
 
 @media only screen and (max-width: 768px) {
      /*NAVIGATION CLASSES */
@@ -171,13 +336,40 @@ a {
                  /*ALL IDS STAYS HERE */
 
 #head{
-    font-size: 3rem;
+    font-size: 7rem;
 }
+
+
+.container {
+    position: relative;
+    max-width: 800px; /* Maximum width */
+    margin: 0 auto; /* Center it */
+    margin-right: 20em;
+  }
+  
+  .container .content {
+    position: absolute; /* Position the background text */
+    bottom: 0; /* At the bottom. Use top:0 to append it to the top */
+    background: rgb(0, 0, 0); /* Fallback color */
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    color: #f1f1f1; /* Grey text */
+    width: 100%; /* Full width */
+    padding: 20px; /* Some padding */
+  }
+
+  
+ 
+#img{
+    right: 80rem;
+    bottom: -10rem;
+}
+
 #logo{
     width: 70%;
     position: absolute;
     left: 13.5%;
 }
+
                 /* ALL IDS STAYS HERE END */
 
                     /*ALL SCREEN SIZE STAYS HERE */
@@ -188,9 +380,178 @@ a {
         top:120%;
         left: 15%;
     }
+
     #head{
-        font-size: 4rem;
+        font-size: 2rem;
+        margin-top: 10px;
     }
+
+    #lsas{
+        font-size: 500%;
+    }
+
+
+    .line{
+        padding-left: 10rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        min-height: 8h;
+        left: 10%;
+        margin-top: 10px;
+      }
+
+
+      .massai{
+        position: absolute;
+        left: 0px;
+        top: 0rem;
+        visibility: hidden;
+    }
+    
+
+
+    #icon{
+        margin: 30rem;
+        left: -22rem;
+        width: 10%;
+        position: absolute;
+        height: 4%;
+        top: 38%;
+    }
+    
+    #iconHead{
+        margin: 30rem;
+        left: -22rem;
+        width: 10%;
+        position: absolute;
+        height: 4%;
+        top: 30%;
+    }
+
+    
+    
+    #Ibeach{
+        margin: 30rem;
+        left: 0rem;
+        width: 13%;
+        position: absolute;
+        height: 5%;
+        top: 23%;
+    }
+    
+    #Headbeach{
+        margin: 30rem;
+        left: 0rem;
+        width: 13%;
+        position: absolute;
+        height: 5%;
+        top: 30%;
+    }
+
+    
+    #Safari{
+        margin: 30rem;
+        left: 0.5rem;
+        width: 15%;
+        position: absolute;
+        height: 6%;
+        top: 35%;
+    }
+
+    #HeadSafari{
+        margin: 30rem;
+        left: 1.5rem;
+        width: 15%;
+        position: absolute;
+        height: 6%;
+        top: 47%;
+    }
+
+
+    #cultureIcon{
+        margin: 30rem;
+        left: -23rem;
+        width: 20%;
+        position: absolute;
+        height: 6%;
+        top: 45%;
+    }
+    
+    
+    
+    #headCulture{
+        margin: 30rem;
+        left: -21.5rem;
+        width: 15%;
+        position: absolute;
+        height: 6%;
+        top: 47%;
+    }
+
+
+
+    .visit{
+        height: 35%;
+        width: 100%;
+        background-color: wheat;
+        position: relative;
+        top: 38%;
+    }
+
+
+
+
+    #Serengeti{
+        font-weight: bold;
+        color: #583a19;
+        font-size: 31px;
+        padding: 10%;
+        position: relative;
+        top: -6%;
+    }
+    
+    #SerengetiParagrph{
+        font-size: 18px;
+        padding: 10%;
+        position: relative;
+        top: -18%;
+        display: block;
+        float: left;
+        width: 100%;
+    }
+    
+   
+
+    #serengetiImg{
+        top: -20%;
+        position: relative;
+        width: 90%;
+        left: -1%;
+        right: 12%;
+    }
+
+
+
+    #Psas{
+        font-size: 200%;
+        margin-right: 60px;
+        width: 90%;
+    }
+
+
+
+
+
+
+
+
+
+
+
+    
   }
   
   /* On screens that are 600px or less, set the background color to olive */
@@ -201,12 +562,66 @@ a {
         left: 19%;
     }
     #head{
-        font-size: 2rem;
+        font-size: 6%;
     }
     #logo{
         width: 70%;
     }
     
+
+.line{
+    padding-left: 15%;
+    left: 90rem;
+  }
+
+
+
+
+ #icon{
+    margin: 30rem;
+    left: -22rem;
+    width: 10%;
+    position: absolute;
+    height: 4%;
+    top: 25%;
+}
+
+
+#Ibeach{
+    margin: 30rem;
+    left: 0rem;
+    width: 13%;
+    position: absolute;
+    height: 5%;
+    top: 24.5%;
+}
+
+
+#Safari{
+    margin: 30rem;
+    left: 0.5rem;
+    width: 15%;
+    position: absolute;
+    height: 6%;
+    top: 40%;
+}
+
+
+#cultureIcon{
+    margin: 30rem;
+    left: -23rem;
+    width: 20%;
+    position: absolute;
+    height: 6%;
+    top: 40%;
+}
+
+
+
+
+
+
+
 
   }
                 /*ALL SCREEN SIZE STAYS HERE*/
