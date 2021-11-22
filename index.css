@@ -233,41 +233,121 @@ a {
     height: 6%;
     top: 5.4%;
 }
-
+.left, .right {
+    width: 50%;
+  }
+  
+.middle {
+    width: 50%;
+  }
 
 .visit{
     height: 6%;
     width: 100%;
-    background-color: wheat;
+    background-color: rgb(207, 201, 188);
     position: relative;
     top: 5%;
 }
 
+.column {
+    float: left;
+    width: 50%;
+  }
+  
+  /* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 
 #Serengeti{
     font-weight: bold;
     color: #583a19;
-    font-size: 4rem;
-    padding: 10%;
-    position: relative;
+    font-size: 5rem;
+    padding-left: 10%;
+    padding-top: 5%;
     top: -10%;
 }
 
 #SerengetiParagrph{
     font-size: 22px;
-    padding: 10%;
-    position: relative;
-    top: -58%;
-    display: block;
-    float: left;
-    width: 70%;
+    padding-left: 10%;
+    padding-top: 5%;
+    top: -10px;
 }
 
 #serengetiImg{
-    top: 30%;
+    top: 10%;
+    width: 40%;
+    height: auto;
     position: absolute;
-    width: 28%;
+    padding-left: 5%;
+    border-radius: -10%;
 }
+
+
+
+
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 50%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("https://media.istockphoto.com/photos/tropical-white-sand-beach-with-coco-palms-picture-id1181563943?k=20&m=1181563943&s=612x612&w=0&h=r46MQMvFnvrzzTfjVmvZED5nZyTmAYwISDvkdtM2i2A="); }
+  .img2 { background-image: url("img_girl.jpg"); }
+  .img3 { background-image: url("img_lights.jpg"); }
+  .img4 { background-image: url("img_nature.jpg"); }
+  .img5 { background-image: url("img_forest.jpg"); }
+  .img6 { background-image: url("img_woods.jpg"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 300px;
+    padding: 20px;
+    text-align: center;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -428,7 +508,7 @@ a {
         width: 10%;
         position: absolute;
         height: 4%;
-        top: 30%;
+        top: 6.22%;
     }
 
     
@@ -448,7 +528,7 @@ a {
         width: 13%;
         position: absolute;
         height: 5%;
-        top: 30%;
+        top: 6.2%;
     }
 
     
@@ -467,7 +547,7 @@ a {
         width: 15%;
         position: absolute;
         height: 6%;
-        top: 47%;
+        top: 9.2%;
     }
 
 
@@ -484,21 +564,21 @@ a {
     
     #headCulture{
         margin: 30rem;
-        left: -21.5rem;
+        left: -21.8rem;
         width: 15%;
         position: absolute;
         height: 6%;
-        top: 47%;
+        top: 9.2%;
     }
 
 
 
     .visit{
-        height: 35%;
+        height: 7.5%;
         width: 100%;
-        background-color: wheat;
+        background-color: rgb(207, 201, 188);
         position: relative;
-        top: 38%;
+        top: 7%;
     }
 
 
@@ -507,30 +587,24 @@ a {
     #Serengeti{
         font-weight: bold;
         color: #583a19;
-        font-size: 31px;
-        padding: 10%;
-        position: relative;
-        top: -6%;
+        font-size: 3rem;
+        padding-left: 10%;
+        padding-top: 5%;
+        top: -10%;
     }
     
     #SerengetiParagrph{
-        font-size: 18px;
-        padding: 10%;
-        position: relative;
-        top: -18%;
-        display: block;
-        float: left;
-        width: 100%;
+        font-size: 1.5rem;
+        padding-left: 10%;
+        padding-top: 5%;
+        top: -10px;
     }
     
-   
-
     #serengetiImg{
-        top: -20%;
         position: relative;
         width: 90%;
-        left: -1%;
-        right: 12%;
+        padding-top: 5%;
+        padding-left: 10%;
     }
 
 
@@ -556,6 +630,10 @@ a {
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
+    .column {
+        width: 100%;
+      }
+    
     .body-div{
         position: absolute;
         top: 110%;
@@ -582,8 +660,8 @@ a {
     left: -22rem;
     width: 10%;
     position: absolute;
-    height: 4%;
-    top: 25%;
+    height: 1%;
+    top: 4.9%;
 }
 
 
@@ -592,8 +670,8 @@ a {
     left: 0rem;
     width: 13%;
     position: absolute;
-    height: 5%;
-    top: 24.5%;
+    height: 1%;
+    top: 5%;
 }
 
 
@@ -602,8 +680,8 @@ a {
     left: 0.5rem;
     width: 15%;
     position: absolute;
-    height: 6%;
-    top: 40%;
+    height: 1%;
+    top: 8%;
 }
 
 
@@ -612,10 +690,18 @@ a {
     left: -23rem;
     width: 20%;
     position: absolute;
-    height: 6%;
-    top: 40%;
+    height: 1%;
+    top: 8%;
 }
 
+
+.visit{
+    height: 8.0%;
+    width: 100%;
+    background-color: rgb(207, 201, 188);
+    position: relative;
+    top: 7%;
+}
 
 
 
