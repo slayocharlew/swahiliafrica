@@ -141,8 +141,9 @@ a {
 
 
 #Psas{
-    font-size: 200%;
-    margin-right: 20px;
+    font-size: 180%;
+    margin-right: 10%;
+    padding-left: 10%;
 }
 
 .massai{
@@ -155,8 +156,8 @@ a {
 
 #icon{
     margin: 35rem;
-    top: 3%;
-    left: 22rem;
+    top: 6%;
+    left: 3%;
     width: 6%;
     position: absolute;
     height: -10%;
@@ -165,73 +166,73 @@ a {
 
 #Ibeach{
     margin: 30rem;
-    left: 52rem;
+    left: 42%;
     width: 8%;
     position: absolute;
     height: 2%;
-    top: 3.2%;
+    top: 6.4%;
 }
 
 
 #Safari{
     margin: 30rem;
-    left: 82rem;
+    left: 25%;
     width: 8%;
     position: absolute;
     height: 2%;
-    top: 3.3%;
+    top: 6.5%;
 }
 
 
 
 #iconHead{
     margin: 30rem;
-    left: 30rem;
+    left: 8%;
     width: 10%;
     position: absolute;
     height: 4%;
-    top: 5.4%;
+    top: 8.5%;
 }
 
 
 #Headbeach{
     margin: 30rem;
-    left: 56rem;
+    left: 44%;
     width: 13%;
     position: absolute;
     height: 5%;
-    top: 5.4%;
+    top: 8.5%;
 }
 
 
 #HeadSafari{
     margin: 30rem;
-    left: 87rem;
+    left: 27%;
     width: 15%;
     position: absolute;
     height: 6%;
-    top: 5.4%;
+    top: 8.5%;
 }
 
 
 #cultureIcon{
     margin: 30rem;
-    left: 110rem;
+    left: 58%;
     width: 8%;
     position: absolute;
     height: 2%;
-    top: 3.2%;
+    top: 6.4%;
 }
 
 
 
 #headCulture{
     margin: 30rem;
-    left: 114rem;
+    left: 59%;
     width: 15%;
     position: absolute;
     height: 6%;
-    top: 5.4%;
+    top: 8.5%;
 }
 .left, .right {
     width: 50%;
@@ -242,20 +243,20 @@ a {
   }
 
 .visit{
-    height: 6%;
+    height: 10%;
     width: 100%;
-    background-color: rgb(207, 201, 188);
+    background-color: rgb(229, 205, 151);
     position: relative;
     top: 5%;
 }
 
-.column {
+.column_half {
     float: left;
     width: 50%;
   }
   
-  /* Clear floats after the columns */
-.row:after {
+
+.row_half:after {
     content: "";
     display: table;
     clear: both;
@@ -271,8 +272,8 @@ a {
 }
 
 #SerengetiParagrph{
-    font-size: 22px;
-    padding-left: 10%;
+    font-size: 20px;
+    padding-left: 5%;
     padding-top: 5%;
     top: -10px;
 }
@@ -286,78 +287,91 @@ a {
     border-radius: -10%;
 }
 
-
-
-
-
-body, html {
-    height: 100%;
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+.column {
+    float: left;
+    width: 33.33%;
   }
   
-  * {
-    box-sizing: border-box;
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .grid-container {
+    display: table;
+    grid: 10% / auto auto auto;
+    grid-gap: 10%;
+    padding: 10%;
+    position:absolute;
+    top: 19%;
   }
   
-  .bg-image {
-    /* Full height */
-    height: 50%;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+  .grid-container > div {
+    padding: 10px 0;
   }
-  
-  /* Images used */
-  .img1 { background-image: url("https://media.istockphoto.com/photos/tropical-white-sand-beach-with-coco-palms-picture-id1181563943?k=20&m=1181563943&s=612x612&w=0&h=r46MQMvFnvrzzTfjVmvZED5nZyTmAYwISDvkdtM2i2A="); }
-  .img2 { background-image: url("img_girl.jpg"); }
-  .img3 { background-image: url("img_lights.jpg"); }
-  .img4 { background-image: url("img_nature.jpg"); }
-  .img5 { background-image: url("img_forest.jpg"); }
-  .img6 { background-image: url("img_woods.jpg"); }
-  
-  /* Position text in the middle of the page/image */
-  .bg-text {
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
-    color: white;
-    font-weight: bold;
-    font-size: 80px;
-    border: 10px solid #f1f1f1;
-    position: fixed; /* Stay fixed */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+
+.container{
+    position: relative;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: -70px; 
+    top: 7%;
+}
+
+
+
+.container .card{
+    position: relative;
+    max-width: 350px;
+    height: 225px;
+    background: #fff;
+    margin: 30px 10px 20px 40px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+.container .card:hover{
+    height: 320px;
+}
+
+
+.container .card .imgbx{
+    position: relative;
     width: 300px;
-    padding: 20px;
+    height: 300px;
+    top: -60px;
+    left: 28px;
+    z-index: 5;
+}
+
+.container .card .imgbx img{
+    max-width: 100%;
+    border-radius: 10px;
+}
+
+.container .card .content{
+    position: relative;
+    margin-top: -150px;
+    padding: 10px 15px;
     text-align: center;
-  }
+    color: #111;
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.container .card:hover .content{
+    visibility: visible;
+    opacity: 2;
+    margin-top: 5px;
+    transition-delay: 0.3s;
+}
 
 
 
@@ -467,7 +481,7 @@ body, html {
     }
 
     #lsas{
-        font-size: 500%;
+        font-size: 200%;
     }
 
 
@@ -614,25 +628,18 @@ body, html {
         margin-right: 60px;
         width: 90%;
     }
-
-
-
-
-
-
-
-
-
-
-
     
   }
   
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     .column {
-        width: 100%;
+        width: 50%;
       }
+    .column_half{
+        width: 100%;
+        float: left;
+    }
     
     .body-div{
         position: absolute;
@@ -684,7 +691,6 @@ body, html {
     top: 8%;
 }
 
-
 #cultureIcon{
     margin: 30rem;
     left: -23rem;
@@ -693,7 +699,9 @@ body, html {
     height: 1%;
     top: 8%;
 }
-
+.grid-container{
+    visibility: hidden;
+}                   
 
 .visit{
     height: 8.0%;
@@ -703,6 +711,25 @@ body, html {
     top: 7%;
 }
 
+.container .card{
+    position: relative;
+    max-width: 100px;
+    height: 100%;
+    background: #fff;
+    margin: 30px 10px 20px 5px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: column;
+    transition: 0.3s ease-in-out;
+}
+
+
+#SerengetiParagrph{
+    font-size: 1.5rem;
+    padding-left: 12%;
+    padding-top: 5%;
+    top: -22px;
+}
 
 
 
