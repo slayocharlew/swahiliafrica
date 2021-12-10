@@ -634,7 +634,7 @@ a {
   /* On screens that are 600px or less, set the background color to olive */
   @media screen and (max-width: 600px) {
     .column {
-        width: 50%;
+        width: 100%;
       }
     .column_half{
         width: 100%;
